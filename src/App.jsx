@@ -3,6 +3,8 @@ import "./App.css";
 import Header from "./component/header";
 import Cources from "./component/Cources";
 import Cart from "./component/cart";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 	const [cource, setCource] = useState([]);
@@ -15,11 +17,13 @@ function App() {
 
 		let count = item.price;
 		let credit = item.credit_hour;
+		// toast("hello ")
+
 
 		if (!isExist) {
 
 			if (remainingCredit < 0) {
-				alert("no credet remainnig");
+				toast("no credit remaining")
 
 			} else {
 
@@ -32,7 +36,7 @@ function App() {
 				let remainingCredit = 20 - credit;
 
 				if (remainingCredit < 0) {
-					alert("no credet remainnig");
+					toast("no credet remainnig");
 				} else {
 					setRenainingCredit(remainingCredit);
 					setCount(count);
@@ -42,7 +46,7 @@ function App() {
 			}
 
 		} else {
-			alert("this course is already added");
+			toast("this course is already added");
 
 		}
 	};
@@ -56,6 +60,7 @@ function App() {
 							className="w-3/4"
 							handleClick={handleClick}
 						></Cources>
+						<ToastContainer />
 						<Cart
 							cource={cource}
 							count={count}
