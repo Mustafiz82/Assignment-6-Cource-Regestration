@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 import Cource from "./cource";
 
 const Cources = ({handleClick}) => {
@@ -24,5 +25,9 @@ const Cources = ({handleClick}) => {
 		</div>
 	);
 };
+
+Cources.propTypes = {
+	handleClick: PropTypes.func,
+}
 
 export default Cources;

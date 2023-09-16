@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+// import PropTypes from 'prop-types';
+import { useState } from "react";
 import "./App.css";
 import Header from "./component/header";
 import Cources from "./component/Cources";
@@ -23,7 +24,7 @@ function App() {
 		if (!isExist) {
 
 			if (remainingCredit < 0) {
-				toast("no credit remaining")
+				toast("not enough credit remaining")
 
 			} else {
 
@@ -36,7 +37,7 @@ function App() {
 				let remainingCredit = 20 - credit;
 
 				if (remainingCredit < 0) {
-					toast("no credet remainnig");
+					toast("not enough credit remainnig");
 				} else {
 					setRenainingCredit(remainingCredit);
 					setCount(count);

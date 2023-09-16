@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import PropTypes from 'prop-types';
 const Cart = ({ cource ,count ,credit, remainingCredit }) => {
 
     console.log(count);
@@ -30,5 +29,13 @@ const Cart = ({ cource ,count ,credit, remainingCredit }) => {
 		</div>
 	);
 };
+
+Cart.propTypes = {
+	cource: PropTypes.array.isRequired ,
+	count: PropTypes.number,
+	credit: PropTypes.number,
+	remainingCredit : PropTypes.number
+
+}
 
 export default Cart;
