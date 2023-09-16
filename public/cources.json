@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/CzcwZv0/d1326ca6cca8038cd115a061b4e2b3bc-840x430-1-640x300.png",
+      "course_title": "Introduction to Python Programming",
+      "course_description": "This comprehensive course introduces you to the world of Python programming. Learn the fundamentals, including variables, loops, and data structures.",
+      "price": 25000,
+      "credit_hour": 3
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/vHXGyDV/programming-background-collage-1.jpg",
+      "course_title": "Web Development with HTML & CSS",
+      "course_description": "start journey into web development with this course. Master HTML and CSS, and build web pages from scratch. Take your first step towards becoming a web developer.",
+      "price": 10000,
+      "credit_hour": 4
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/sjmXfyX/javascript.webp",
+      "course_title": "JavaScript Fundamentals",
+      "course_description": "Unleash the power of JavaScript! Dive into functions, events, and DOM manipulation. Gain the skills to create dynamic and interactive web applications.",
+      "price": 15000,
+      "credit_hour": 3
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/hd0HL84/Java-Tutorial-01.webp",
+      "course_title": "Java Programming for Beginners",
+      "course_description": "Start your programming journey with Java. Learn the basics of Java programming and create your first applications. Build a strong foundation in object-oriented programming.",
+      "price": 18000,
+      "credit_hour": 4
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/P4cGgHb/SQLpt-ebb65074.webp",
+      "course_title": "Database Design and SQL",
+      "course_description": "Discover the world of databases and SQL. Learn to design efficient databases and write powerful SQL queries. Unlock the key to effective data management.",
+      "price": 22000,
+      "credit_hour": 3
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/JnvCkr3/CPA-2.png",
+      "course_title": "C++ Programming Essentials",
+      "course_description": "Master C++ programming! Explore syntax, data structures, and algorithms. Equip yourself with the skills to tackle complex programming challenges.",
+      "price": 28000,
+      "credit_hour": 5
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/GpC2HJK/0-ZEPJs-ASf-B2z7hi-0.png",
+      "course_title": "Full-Stack Web Development",
+      "course_description": "Become a full-stack developer. Learn both front-end and back-end technologies. Build web applications from start to finish and enter the world of full-stack development.",
+      "price": 35000,
+      "credit_hour": 6
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/2k4qyrz/Python-Data-Science-Tutorial.jpg",
+      "course_title": "Data Science with Python",
+      "course_description": "Dive into data science with Python. Analyze data, create data visualizations, and even explore machine learning. Unlock the potential of data-driven insights.",
+      "price": 42000,
+      "credit_hour": 5
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/Hh95wfH/Flutter-App-development.jpg",
+      "course_title": "Mobile App Development with Flutter",
+      "course_description": "Enter the world of mobile app development using Flutter. Create cross-platform mobile apps with ease. Learn to build innovative mobile applications.",
+      "price": 31000,
+      "credit_hour": 4
+    }
+  ]
+  
