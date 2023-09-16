@@ -7,7 +7,7 @@
 ### 3. Remaining credit
   - Can calculate total credit and remaining credit
 ### 4. Responsive design
-  - Ensure the website is mobile-friendly and works well on various devices.
+  - Ensure the website is mobile-friendly and works well on various devices. 
 
 
 
