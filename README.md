@@ -8,3 +8,7 @@
   ⋅⋅* Can calculate total credit and remaining credit
 ###4.Responsive design
   ⋅⋅* Ensure the website is mobile-friendly and works well on various devices.
+
+# Heading 1
+## Heading 2
+### Heading 3
