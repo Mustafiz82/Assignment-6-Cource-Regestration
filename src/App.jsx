@@ -6,35 +6,44 @@ import Cart from "./component/cart";
 
 function App() {
 	const [cource, setCource] = useState([]);
-	const [count , setCount] = useState(0)
-	const [credit , setCredit] = useState(0)
-	const [remainingCredit , setRenainingCredit] = useState(0)
+	const [count, setCount] = useState(0);
+	const [credit, setCredit] = useState(0);
+	const [remainingCredit, setRenainingCredit] = useState(0);
 
 	const handleClick = (item) => {
 		const isExist = cource.find((courceItem) => courceItem.id == item.id);
 
 		let count = item.price;
 		let credit = item.credit_hour;
-		if (isExist) {
-			alert("this course is already added");
+
+		if (!isExist) {
+
+			if (remainingCredit < 0) {
+				alert("no credet remainnig");
+
+			} else {
+
+				
+				cource.forEach((price) => {
+					count = count + price.price;
+					credit = credit + price.credit_hour;
+				});
+
+				let remainingCredit = 20 - credit;
+
+				if (remainingCredit < 0) {
+					alert("no credet remainnig");
+				} else {
+					setRenainingCredit(remainingCredit);
+					setCount(count);
+					setCredit(credit);
+					setCource([...cource, item]);
+				}
+			}
+
 		} else {
-			setCource([...cource, item]);
-			cource.forEach((price) => {
-				count = count + price.price;
-				credit = credit + price.credit_hour;
-			});
-			let remainingCredit = 20 - credit;
+			alert("this course is already added");
 
-
-			if(remainingCredit < 0){
-				alert("no credet remainnig")
-			}
-			else{
-				setRenainingCredit(remainingCredit);
-				setCount(count);
-				setCredit(credit);
-
-			}
 		}
 	};
 	return (
