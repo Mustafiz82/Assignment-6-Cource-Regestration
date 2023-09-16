@@ -3,10 +3,10 @@ import { FiDollarSign } from "react-icons/fi";
 import { HiOutlineBookOpen } from "react-icons/hi";
 // import { FiDollarSign } from "react-icons/fa";
 
-const Cource = ({ cource }) => {
+const Cource = ({ cource ,handleClick}) => {
 	const { image, course_title, course_description, price, credit_hour } =
 		cource;
-	console.log(cource.course_title);
+	// console.log(cource.course_title);
 	return (
 		<div className="text-justify">
 			<div className="card card-compact  bg-base-100 shadow-xl p-4 first-letter: ">
@@ -35,7 +35,7 @@ const Cource = ({ cource }) => {
 						</div>
 					</div>
 					<div className="card-actions justify-end">
-						<button className="btn btn-primary w-full">Select</button>
+						<button onClick={() => {handleClick(cource)}} className="btn btn-primary w-full">Select</button>
 					</div>
 				</div>
 			</div>

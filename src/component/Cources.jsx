@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cource from "./cource";
 
-const Cources = () => {
+const Cources = ({handleClick}) => {
 	const [cource, setCource] = useState([]);
 
 	useEffect(() => {
@@ -17,6 +17,7 @@ const Cources = () => {
                     
 					cource={item}
 					key={item.id}
+                    handleClick={handleClick}
                     
 				></Cource>
 			))}
