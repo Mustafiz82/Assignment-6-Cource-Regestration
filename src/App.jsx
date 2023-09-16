@@ -53,11 +53,11 @@ function App() {
 	return (
 		<>
 			<div className="bg-[#F3F3F3]">
-				<div className="max-w-screen-2xl mx-auto py-12 ">
+				<div className="max-w-screen-2xl mx-auto py-12 mx-5 ">
 					<Header></Header>
-					<div className="flex gap-4">
+					<div className="flex gap-4 flex-col-reverse lg:flex-row">
 						<Cources
-							className="w-3/4"
+							
 							handleClick={handleClick}
 						></Cources>
 						<ToastContainer />
